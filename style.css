@@ -19,7 +19,7 @@ html {
 }
 
 body{
-	background: #fff url(./images/common/bkg.gif) left top no-repeat;
+	background: blue;	
 	color: #000;
 	text-align: center;
 }
