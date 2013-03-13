@@ -15,7 +15,6 @@
 *************************************************/
 
 html {
-	overflow-y:scroll;
 }
 
 body{
@@ -36,6 +35,10 @@ a img, img {
 
 td, th{
 	vertical-align:top;
+}
+
+.great{
+	font-size: 77%;
 }
 
 
