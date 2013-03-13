@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*
+	77% = 10px	|	122% = 16px	|	167% = 22px	
+	85% = 11px	|	129% = 17px	|	174% = 23px
+	92% = 12px	|	136% = 18px	|	182% = 24px
+	100% = 13px	|	144% = 19px	|	189% = 25px
+	107% = 14px	|	152% = 20px	|	197% = 26px
+	114% = 15px	|	159% = 21px	|
+
+*/
+
+/************************************************
+=base
+*************************************************/
+
+html {
+	overflow-y:scroll;
+}
+
+body{
+	background: #fff url(./images/common/bkg.gif) left top no-repeat;
+	color: #000;
+	text-align: center;
+}
+
+a:link{ text-decoration: underline; color: #222;}
+a:visited{ text-decoration: underline; color: #222;}
+a:hover{ text-decoration: underline; color: #777;}
+a:active{ text-decoration: underline; color: #222;}
+
+a img, img { 
+	border:0;
+	vertical-align:top;
+}
+
+td, th{
+	vertical-align:top;
+}
+
+
+/************************************************
+=layout
+*************************************************/
+
+#wrapper{
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 970px;
+	text-align: left;
+}
+
+#main{
+	float: left;
+	display: inline;
+	width: 600px;
+}
+
+#nav{
+	float: right;
+	display: inline;
+	width: 200px;
+}
+
+#container{
+    zoom:1;/*for IE 5.5-7*/
+}
+
+#container:after{/*for modern browser*/
+    content:".";
+    display: block;
+    height:0px;
+    clear:both;
+    visibility:hidden;
+}
+
+* html #container{
+	display:inline-table;
+	/*\*/display:block;/**/
+}
+
+#site-title a{
+	position: absolute;
+	left: 0;
+	top: 100px;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: transparent url(./images/common/logoHeader.png) left top no-repeat;
+}
+
+
+/************************************************
+=section
+*************************************************/
+
+.section{
+	margin: 0 0 40px;
+}
+
+
+/************************************************
+=gNav
+*************************************************/
+
+#gNav{
+	position:relative;
+	left:10px;
+	top:10px;
+	display: block;
+	width: 700px;
+	height: 50px;
+}
+
+#gNav li{
+	text-indent: -9999px;
+}
+
+#gNav li a{
+	display: block;
+	overflow:hidden;
+}
+
+/* position
+----------------------------------------------------*/
+#gNav01 { position:absolute; left: 0; top: 0; }
+#gNav02 { position:absolute; left: 100px; top: 0; }
+#gNav03 { position:absolute; left: 200px; top: 0; }
+#gNav04 { position:absolute; left: 300px; top: 0; }
+#gNav05 { position:absolute; left: 400px; top: 0; }
+#gNav06 { position:absolute; left: 500px; top: 0; }
+#gNav07 { position:absolute; left: 600px; top: 0; }
+
+/* button
+----------------------------------------------------*/
+#gNav01 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat 0 0;}
+#gNav02 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -100px 0;}
+#gNav03 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -200px 0;}
+#gNav04 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -300px 0;}
+#gNav05 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -400px 0;}
+#gNav06 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -500px 0;}
+#gNav07 a { width: 100px; height: 50px; background: transparent url(./images/gNav.jpg) no-repeat -600px 0;}
+
+/* hover
+----------------------------------------------------*/
+#gNav01 a:hover { background: transparent url(./images/gNav.jpg) no-repeat 0 0;}
+#gNav02 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -100px 0;}
+#gNav03 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -200px 0;}
+#gNav04 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -300px 0;}
+#gNav05 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -400px 0;}
+#gNav06 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -500px 0;}
+#gNav07 a:hover { background: transparent url(./images/gNav.jpg) no-repeat -600px 0;}
+
+/* now-states
+----------------------------------------------------*/
+body.a #gNav01 a { background: transparent url(./images/gNav.jpg) no-repeat 0 -50px;}
+body.b #gNav02 a { background: transparent url(./images/gNav.jpg) no-repeat -100px -50px;}
+body.c #gNav03 a { background: transparent url(./images/gNav.jpg) no-repeat -200px -50px;}
+body.d #gNav04 a { background: transparent url(./images/gNav.jpg) no-repeat -300px -50px;}
+body.e #gNav05 a { background: transparent url(./images/gNav.jpg) no-repeat -400px -50px;}
+body.f #gNav06 a { background: transparent url(./images/gNav.jpg) no-repeat -500px -50px;}
+body.g #gNav07 a { background: transparent url(./images/gNav.jpg) no-repeat -600px -50px;}
+
